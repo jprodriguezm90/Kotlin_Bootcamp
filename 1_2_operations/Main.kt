@@ -10,10 +10,23 @@ fun main() {
     val quotient = a / b
     val remainder = a % b
 
+    var sumOP = a.plus(b)
+    val differenceOP = a.minus(b)
+    val productOP = a.times(b)
+    val quotientOP = a.div(b)
+    val remainderOP = a.rem(b)
+
+
+
     //TIP <b>Increment and Decrement</b>
     var x = 5
-    x++ // x = 6
+    ++x // x = 6
+    x++ // x = 7
+    x-- // x = 6
     --x // x = 5
+
+    x.inc()
+    x.dec()
 
     //TIP <b>Assignment Operators</b>
 
@@ -36,9 +49,12 @@ fun main() {
     val isGreaterOrEqual = a >= b
     val isLessOrEqual = a <= b
 
+    val isEqualOP = a.equals(b)
     //TIP <b>Logical operations</b>
-    val bothTrue = isEqual && isGreater
-    val atLeastOneTrue = isEqual || isGreater
+    var bothTrue = isEqual && isGreater
+    bothTrue = isEqual.and(isGreater)
+    var atLeastOneTrue = isEqual || isGreater
+    atLeastOneTrue = isEqual.or(isGreater)
 
 
 }
