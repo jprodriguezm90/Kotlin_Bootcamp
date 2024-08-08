@@ -47,6 +47,14 @@ fun main() {
     val startsWithJohn = email.startsWith("john") // Result: true
 
 
+    var welcomeMessage = "Hello and welcome to Kotlin"
+    when (welcomeMessage.length) {
+        0 -> println("Nothing to say?")
+        in 1..50 -> println("Perfect")
+        else -> println("Too long!")
+    }
+
+
     //TIP
     //<b>Other Useful Functions</b><br>
 
